@@ -3,208 +3,244 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Navjot Brar Official</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-body{
+
+*{
 margin:0;
 padding:0;
-font-family: system-ui, -apple-system, BlinkMacSystemFont,
-"Segoe UI", Roboto, "Apple Color Emoji",
-"Segoe UI Emoji", "Noto Color Emoji", sans-serif;
-background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-.container{
-max-width:520px;
-margin:auto;
+body{
+background:#070d18;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
 padding:20px;
-text-align:center;
 }
 
 .card{
-background:rgba(0,0,0,0.85);
-padding:30px;
-border-radius:25px;
-box-shadow:0 15px 40px rgba(0,255,120,0.15);
-color:#ffffff;
+
+width:360px;
+background:#101828;
+border:1px solid rgba(255,255,255,.08);
+border-radius:22px;
+padding:25px;
+box-shadow:0 0 40px rgba(0,0,0,.5);
+
+}
+
+.profile{
+text-align:center;
 }
 
 .profile img{
-width:130px;
-height:130px;
+
+width:90px;
+height:90px;
 border-radius:50%;
-border:4px solid #00ff7f;
-box-shadow:0 0 25px rgba(0,255,120,0.7);
-object-fit:cover;
+border:4px solid #2da8ff;
+
 }
 
-.heading{
-font-size:28px;
-font-weight:bold;
-background:linear-gradient(90deg,#00ff7f,#00c3ff);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-margin:15px 0;
+h2{
+color:#fff;
+margin-top:15px;
+font-size:26px;
 }
 
-.subtext{
+.sub{
+color:#9aa7c2;
 font-size:14px;
-color:#cccccc;
-margin-bottom:15px;
+margin-top:4px;
 }
 
-.counter{
-font-size:14px;
-color:#aaffcc;
-margin-bottom:15px;
+.stats{
+
+display:flex;
+justify-content:space-between;
+margin-top:25px;
+background:#161f30;
+border-radius:14px;
+padding:15px;
+
 }
 
-.countdown{
-font-size:16px;
-font-weight:bold;
-color:#ff4d6d;
-margin-bottom:20px;
+.stats div{
+text-align:center;
+flex:1;
 }
 
-.button{
-display:block;
-background:linear-gradient(90deg,#00ff7f,#00c3ff);
-color:#000000;
-padding:16px;
-font-size:16px;
-font-weight:bold;
-border-radius:50px;
-text-decoration:none;
-box-shadow:0 8px 25px rgba(0,255,120,0.4);
-margin:20px 0;
-animation:pulse 1.5s infinite;
+.stats h3{
+color:#fff;
+font-size:24px;
 }
 
-.feature{
-background:#111;
-padding:14px;
-border-radius:40px;
-margin:12px 0;
-}
-
-.disclaimer{
-font-size:11px;
-color:#aaaaaa;
-margin-top:20px;
-line-height:1.5;
-}
-
-.powered{
+.stats p{
+color:#8b97b0;
 font-size:12px;
-color:#888;
-margin-top:20px;
+margin-top:3px;
 }
 
-@keyframes pulse{
-0%{transform:scale(1);}
-50%{transform:scale(1.06);}
-100%{transform:scale(1);}
+.btn{
+
+display:block;
+margin-top:22px;
+text-decoration:none;
+text-align:center;
+padding:15px;
+font-size:17px;
+font-weight:600;
+color:white;
+border-radius:12px;
+background:linear-gradient(90deg,#00b8ff,#6366ff);
+
 }
+
+.title{
+
+margin-top:25px;
+color:#7e8aa5;
+font-size:12px;
+letter-spacing:2px;
+
+}
+
+.box{
+
+display:flex;
+align-items:center;
+gap:15px;
+background:#161f30;
+margin-top:12px;
+padding:15px;
+border-radius:12px;
+color:white;
+font-size:15px;
+
+}
+
+.icon{
+
+width:40px;
+height:40px;
+border-radius:10px;
+background:#203047;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:18px;
+
+}
+
+.footer{
+
+text-align:center;
+margin-top:25px;
+color:#9aa7c2;
+font-size:13px;
+
+}
+
+.small{
+margin-top:15px;
+font-size:11px;
+color:#66748f;
+line-height:18px;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="container">
 <div class="card">
 
 <div class="profile">
-<img src="https://i.ibb.co/yF00vYT2/Radhika-Dp.jpg">
+
+<img src="YOUR-IMAGE-LINK">
+
+<h2>Radhika Telugu</h2>
+
+<div class="sub">
+YouTube Educator • Market Mentor
 </div>
 
-<div class="heading">
-TELUGU TRADER RADHIKA
 </div>
 
-<div class="subtext">
-📊 India’s Fast Growing Stock Market Learning Channel
+<div class="stats">
+
+<div>
+<h3>1M+</h3>
+<p>MEMBERS</p>
 </div>
 
-<div id="liveCount" class="counter">
-🔥 2,389 Serious Traders Joined in Last 24 Hours
+<div>
+<h3>500+</h3>
+<p>VIDEOS</p>
 </div>
 
-<div id="countdown" class="countdown">
-Market Insights Access Ends In: 02:00
+<div>
+<h3>3Y+</h3>
+<p>EXPERIENCE</p>
 </div>
 
-<a href="https://t.me/+tTXWLDDVIzowMzdl" target="_blank" class="button">
-JOIN OUR LEARNING CHANNEL
+</div>
+
+<a href="https://t.me/+8sh7G5GHXGllNjFl" class="btn">
+📨 Join Telegram Community
 </a>
 
-<div class="feature">📈 Daily Stock Market Analysis</div>
-<div class="feature">💹 Intraday & Swing Trading Learning</div>
-<div class="feature">🛡 Risk Management & Capital Protection</div>
-<div class="feature">🎯 Beginner to Advanced Guidance</div>
+<div class="title">
+COMMUNITY MEIN KYA MILEGA
+</div>
 
-<a href="https://t.me/+tTXWLDDVIzowMzdl" target="_blank" class="button">
-JOIN OUR LEARNING CHANNEL
+<div class="box">
+<div class="icon">📰</div>
+Daily Market Updates
+</div>
+
+<div class="box">
+<div class="icon">📈</div>
+Live Entry & Exit Analysis
+</div>
+
+<div class="box">
+<div class="icon">📚</div>
+Beginner To Advanced Learning
+</div>
+
+<div class="box">
+<div class="icon">💬</div>
+Community Support & Doubt Solving
+</div>
+
+<a href="https://t.me/+8sh7G5GHXGllNjFl" class="btn">
+📨 Join Telegram Community
 </a>
 
-<div class="disclaimer">
-Disclaimer: This channel is for educational purposes only.
-Stock market investments are subject to market risk.
+<div class="footer">
+
+<b>Learn. Trade. Grow.</b>
+
+<div class="small">
+
+Terms • Privacy • Disclaimer
+
+<br><br>
+
+This website is not affiliated with Facebook or Instagram.
+
 </div>
 
-<div class="powered">
-Powered by <strong>ankul ad agency</strong>
 </div>
 
 </div>
-</div>
-
-<script>
-// 2 Minute Countdown
-var time = 120;
-var countdown = document.getElementById("countdown");
-
-var timer = setInterval(function(){
-var minutes = Math.floor(time/60);
-var seconds = time%60;
-
-countdown.innerHTML = "Market Insights Access Ends In: " +
-(minutes<10?"0":"")+minutes+":"+
-(seconds<10?"0":"")+seconds;
-
-time--;
-
-if(time<0){
-clearInterval(timer);
-countdown.innerHTML="Limited Access Remaining!";
-}
-},1000);
-
-// Fake Live Counter
-var base=2389;
-setInterval(function(){
-base+=Math.floor(Math.random()*4);
-document.getElementById("liveCount").innerHTML=
-"🔥 "+base+" Serious Traders Joined in Last 24 Hours";
-},4000);
-</script>
 
 </body>
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1016227247773602');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1016227247773602&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </html>
