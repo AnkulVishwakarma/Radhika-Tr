@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<title>WAITING PROJECT WORK FROM HOME JOB'S 🏡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 
 <style>
 
@@ -12,146 +15,342 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
 }
 
 body{
-background:#070d18;
+background:#050816;
+font-family:'Poppins',sans-serif;
+overflow-x:hidden;
+color:#fff;
+}
+
+/* Background */
+
+.bg{
+position:fixed;
+inset:0;
+background:
+radial-gradient(circle at top left,#22c55e33,transparent 30%),
+radial-gradient(circle at bottom right,#06b6d433,transparent 30%),
+linear-gradient(180deg,#020617,#07111f,#020617);
+z-index:0;
+}
+
+.grid{
+position:fixed;
+inset:0;
+background-image:
+linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+background-size:40px 40px;
+z-index:0;
+}
+
+/* Floating Glow */
+
+.glow1{
+position:absolute;
+width:300px;
+height:300px;
+background:#22c55e;
+filter:blur(120px);
+opacity:0.15;
+top:-120px;
+left:-100px;
+animation:moveGlow1 8s infinite alternate;
+}
+
+.glow2{
+position:absolute;
+width:300px;
+height:300px;
+background:#06b6d4;
+filter:blur(120px);
+opacity:0.15;
+bottom:-120px;
+right:-100px;
+animation:moveGlow2 8s infinite alternate;
+}
+
+@keyframes moveGlow1{
+0%{transform:translate(0,0);}
+100%{transform:translate(60px,40px);}
+}
+
+@keyframes moveGlow2{
+0%{transform:translate(0,0);}
+100%{transform:translate(-60px,-40px);}
+}
+
+/* Main */
+
+.main{
+position:relative;
+z-index:2;
+min-height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-min-height:100vh;
-padding:20px;
+padding:20px 14px;
 }
 
+/* Card */
+
 .card{
+width:100%;
+max-width:500px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,0.08);
+border-radius:30px;
+padding:26px;
+position:relative;
+overflow:hidden;
+box-shadow:0 0 40px rgba(0,0,0,0.45);
+}
 
-width:360px;
-background:#101828;
-border:1px solid rgba(255,255,255,.08);
-border-radius:22px;
-padding:25px;
-box-shadow:0 0 40px rgba(0,0,0,.5);
+/* Top Line */
 
+.card::before{
+content:'';
+position:absolute;
+top:0;
+left:0;
+right:0;
+height:3px;
+background:linear-gradient(90deg,#22c55e,#06b6d4,#22c55e);
+background-size:200% 100%;
+animation:lineMove 3s linear infinite;
+}
+
+@keyframes lineMove{
+0%{background-position:0%;}
+100%{background-position:200%;}
+}
+
+/* Badge */
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+border-radius:50px;
+background:rgba(34,197,94,0.12);
+border:1px solid rgba(34,197,94,0.2);
+font-size:12px;
+font-weight:600;
+color:#86efac;
+margin-bottom:22px;
+}
+
+/* Image */
+
+.imgWrap{
+display:flex;
+justify-content:center;
+}
+
+.imgBorder{
+padding:5px;
+border-radius:50%;
+background:linear-gradient(135deg,#22c55e,#06b6d4);
+box-shadow:0 0 35px rgba(34,197,94,0.35);
 }
 
 .profile{
-text-align:center;
-}
-
-.profile img{
-
-width:90px;
-height:90px;
+width:150px;
+height:150px;
 border-radius:50%;
-border:4px solid #2da8ff;
-
+object-fit:cover;
+border:4px solid #0f172a;
+animation:floatImg 3s ease-in-out infinite;
 }
 
-h2{
-color:#fff;
-margin-top:15px;
-font-size:26px;
+@keyframes floatImg{
+0%{transform:translateY(0);}
+50%{transform:translateY(-7px);}
+100%{transform:translateY(0);}
 }
+
+/* Title */
+
+.title{
+font-size:30px;
+font-weight:800;
+line-height:1.5;
+text-align:center;
+margin-top:22px;
+}
+
+.title span{
+color:#86efac;
+}
+
+/* Subtext */
 
 .sub{
-color:#9aa7c2;
-font-size:14px;
+font-size:15px;
+line-height:2;
+color:#cbd5e1;
+text-align:center;
+margin-top:16px;
+}
+
+/* Stats */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:10px;
+margin-top:24px;
+}
+
+.stat{
+background:rgba(255,255,255,0.04);
+padding:14px;
+border-radius:18px;
+text-align:center;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.statVal{
+font-size:20px;
+font-weight:700;
+color:#86efac;
+}
+
+.statText{
+font-size:11px;
+color:#94a3b8;
 margin-top:4px;
 }
 
-.stats{
+/* Features */
 
+.features{
+margin-top:24px;
 display:flex;
-justify-content:space-between;
-margin-top:25px;
-background:#161f30;
-border-radius:14px;
-padding:15px;
-
+flex-direction:column;
+gap:12px;
 }
 
-.stats div{
-text-align:center;
-flex:1;
-}
-
-.stats h3{
-color:#fff;
-font-size:24px;
-}
-
-.stats p{
-color:#8b97b0;
-font-size:12px;
-margin-top:3px;
-}
-
-.btn{
-
-display:block;
-margin-top:22px;
-text-decoration:none;
-text-align:center;
-padding:15px;
-font-size:17px;
-font-weight:600;
-color:white;
-border-radius:12px;
-background:linear-gradient(90deg,#00b8ff,#6366ff);
-
-}
-
-.title{
-
-margin-top:25px;
-color:#7e8aa5;
-font-size:12px;
-letter-spacing:2px;
-
-}
-
-.box{
-
+.feature{
 display:flex;
 align-items:center;
-gap:15px;
-background:#161f30;
-margin-top:12px;
-padding:15px;
-border-radius:12px;
-color:white;
-font-size:15px;
+gap:14px;
+background:rgba(255,255,255,0.04);
+padding:14px;
+border-radius:18px;
+border:1px solid rgba(255,255,255,0.05);
+transition:0.3s;
+}
 
+.feature:hover{
+transform:translateX(4px);
+background:rgba(34,197,94,0.06);
 }
 
 .icon{
-
-width:40px;
-height:40px;
-border-radius:10px;
-background:#203047;
+width:42px;
+height:42px;
+border-radius:14px;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:18px;
-
+background:rgba(34,197,94,0.08);
+font-size:20px;
 }
+
+.feature h4{
+font-size:15px;
+margin-bottom:2px;
+}
+
+.feature p{
+font-size:12px;
+color:#94a3b8;
+}
+
+/* Join Button */
+
+.joinBtn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+margin-top:28px;
+padding:18px;
+border-radius:22px;
+background:linear-gradient(90deg,#22c55e,#06b6d4);
+text-decoration:none;
+font-size:18px;
+font-weight:700;
+color:#fff;
+box-shadow:0 0 30px rgba(34,197,94,0.35);
+animation:pulseBtn 1.5s infinite;
+position:relative;
+overflow:hidden;
+}
+
+.joinBtn::before{
+content:'';
+position:absolute;
+top:0;
+left:-120%;
+width:60%;
+height:100%;
+background:rgba(255,255,255,0.25);
+transform:skewX(-20deg);
+animation:shine 3s infinite;
+}
+
+@keyframes shine{
+100%{left:140%;}
+}
+
+@keyframes pulseBtn{
+0%{transform:scale(1);}
+50%{transform:scale(1.03);}
+100%{transform:scale(1);}
+}
+
+/* Live */
+
+.live{
+margin-top:18px;
+font-size:14px;
+font-weight:600;
+text-align:center;
+color:#86efac;
+}
+
+/* Agency */
+
+.agency{
+margin-top:20px;
+display:flex;
+justify-content:center;
+}
+
+.agency a{
+padding:10px 18px;
+border-radius:50px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(134,239,172,0.15);
+text-decoration:none;
+font-size:13px;
+font-weight:600;
+color:#86efac;
+box-shadow:0 0 18px rgba(34,197,94,0.12);
+}
+
+/* Footer */
 
 .footer{
-
+margin-top:22px;
+font-size:12px;
 text-align:center;
-margin-top:25px;
-color:#9aa7c2;
-font-size:13px;
-
-}
-
-.small{
-margin-top:15px;
-font-size:11px;
-color:#66748f;
-line-height:18px;
+line-height:1.8;
+color:#94a3b8;
 }
 
 </style>
@@ -159,88 +358,144 @@ line-height:18px;
 
 <body>
 
+<div class="bg"></div>
+<div class="grid"></div>
+
+<div class="glow1"></div>
+<div class="glow2"></div>
+
+<div class="main">
+
 <div class="card">
 
-<div class="profile">
-
-<img src="YOUR-IMAGE-LINK">
-
-<h2>Radhika Telugu</h2>
-
-<div class="sub">
-YouTube Educator • Market Mentor
+<div class="badge">
+🏡 PREMIUM WORK FROM HOME COMMUNITY
 </div>
 
+<div class="imgWrap">
+
+<div class="imgBorder">
+
+<img src="https://i.ibb.co/qYG4qPrF/IMG-20260518-WA0023.jpg"
+class="profile">
+
+</div>
+
+</div>
+
+<div class="title">
+WAITING PROJECT <br>
+
+<span>WORK FROM HOME JOB'S 🏡</span>
+
+</div>
+
+<div class="sub">
+💻 Daily Work From Home Job Updates <br>
+📲 Online Earning Opportunities <br>
+🔥 Trusted Remote Job Community
 </div>
 
 <div class="stats">
 
-<div>
-<h3>1M+</h3>
-<p>MEMBERS</p>
+<div class="stat">
+<div class="statVal">10K+</div>
+<div class="statText">Members</div>
 </div>
+
+<div class="stat">
+<div class="statVal">Daily</div>
+<div class="statText">Job Updates</div>
+</div>
+
+<div class="stat">
+<div class="statVal">24/7</div>
+<div class="statText">Support</div>
+</div>
+
+</div>
+
+<div class="features">
+
+<div class="feature">
+
+<div class="icon">💻</div>
 
 <div>
-<h3>500+</h3>
-<p>VIDEOS</p>
+<h4>Online Work Opportunities</h4>
+<p>Remote Jobs & Daily Projects</p>
 </div>
+
+</div>
+
+<div class="feature">
+
+<div class="icon">📲</div>
 
 <div>
-<h3>3Y+</h3>
-<p>EXPERIENCE</p>
+<h4>Instant Updates</h4>
+<p>Latest Work From Home Jobs</p>
 </div>
 
 </div>
 
-<a href="https://t.me/+8sh7G5GHXGllNjFl" class="btn">
-📨 Join Telegram Community
+<div class="feature">
+
+<div class="icon">💰</div>
+
+<div>
+<h4>Earn From Home</h4>
+<p>Flexible Online Income Sources</p>
+</div>
+
+</div>
+
+</div>
+
+<a href="https://t.me/+2_XX-UZs63NlYmE1"
+target="_blank"
+class="joinBtn">
+
+🚀 JOIN TELEGRAM NOW
+
 </a>
 
-<div class="title">
-COMMUNITY MEIN KYA MILEGA
+<div class="live" id="liveUsers">
+● 3,482 Members Joined Today
 </div>
 
-<div class="box">
-<div class="icon">📰</div>
-Daily Market Updates
-</div>
+<div class="agency">
 
-<div class="box">
-<div class="icon">📈</div>
-Live Entry & Exit Analysis
-</div>
+<a href="https://t.me/+65RvsP9pHTtkNzU1" target="_blank">
 
-<div class="box">
-<div class="icon">📚</div>
-Beginner To Advanced Learning
-</div>
+🔥 AD BY @AMITGROWTHAGENCY
 
-<div class="box">
-<div class="icon">💬</div>
-Community Support & Doubt Solving
-</div>
-
-<a href="https://t.me/+8sh7G5GHXGllNjFl" class="btn">
-📨 Join Telegram Community
 </a>
+
+</div>
 
 <div class="footer">
-
-<b>Learn. Trade. Grow.</b>
-
-<div class="small">
-
-Terms • Privacy • Disclaimer
-
-<br><br>
-
-This website is not affiliated with Facebook or Instagram.
-
+⚠️ Please verify all job details before applying.
 </div>
 
 </div>
 
 </div>
+
+<script>
+
+let users = 3482;
+
+setInterval(function(){
+
+users += Math.floor(Math.random()*4);
+
+document.getElementById("liveUsers").innerHTML =
+"● " + users + " Members Joined Today";
+
+},3000);
+
+</script>
 
 </body>
 </html>
