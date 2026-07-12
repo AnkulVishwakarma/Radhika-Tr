@@ -1,290 +1,222 @@
-<div style="width:100%;
-min-height:100vh;
-margin:0;
-padding:18px;
-box-sizing:border-box;
-font-family:Poppins,Arial,sans-serif;
-background:#061018;
-overflow:hidden;
-position:relative;
-color:#fff;
-text-align:center;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TELUGU TRADER RADHIKA</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-body{
+*{
 margin:0;
 padding:0;
-background:#061018;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
-/* Animated Glow Background */
-.bgGlow1{
-position:absolute;
-width:380px;
-height:380px;
-background:#00d084;
-filter:blur(140px);
-opacity:0.14;
-top:-120px;
-left:-120px;
-animation:moveGlow1 8s infinite alternate;
+body{
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+color:#fff;
 }
 
-.bgGlow2{
-position:absolute;
-width:320px;
-height:320px;
-background:#00b4ff;
-filter:blur(130px);
-opacity:0.14;
-bottom:-120px;
-right:-100px;
-animation:moveGlow2 8s infinite alternate;
-}
+/* CARD */
 
-@keyframes moveGlow1{
-0%{transform:translate(0,0);}
-100%{transform:translate(70px,45px);}
-}
+.container{
+width:95%;
+max-width:420px;
+padding:30px 25px;
+border-radius:18px;
 
-@keyframes moveGlow2{
-0%{transform:translate(0,0);}
-100%{transform:translate(-60px,-40px);}
-}
-
-/* Main Card */
-.mainCard{
-position:relative;
-z-index:2;
-max-width:500px;
-margin:auto;
-padding:26px;
 background:rgba(255,255,255,0.05);
-backdrop-filter:blur(16px);
-border-radius:32px;
+backdrop-filter:blur(12px);
+
 border:1px solid rgba(255,255,255,0.08);
-box-shadow:0 0 40px rgba(0,0,0,0.5);
+
+box-shadow:0 20px 60px rgba(0,0,0,0.6);
+text-align:center;
 }
 
-/* Floating Image */
-@keyframes floatImg{
-0%{transform:translateY(0px);}
-50%{transform:translateY(-7px);}
-100%{transform:translateY(0px);}
+/* LOGO */
+
+.logo{
+width:80px;
+height:80px;
+border-radius:50%;
+border:2px solid #FFD700;
+margin-bottom:12px;
 }
 
-.floatImg{
-animation:floatImg 3s ease-in-out infinite;
+/* TEXT */
+
+h1{
+font-size:22px;
+color:#FFD700;
+margin-bottom:6px;
 }
 
-/* Pulse Button */
-@keyframes pulseBtn{
-0%{transform:scale(1);}
-50%{transform:scale(1.05);}
-100%{transform:scale(1);}
+h2{
+font-size:15px;
+opacity:0.9;
+margin-bottom:10px;
 }
 
-.joinBtn{
-animation:pulseBtn 1.5s infinite;
+.sub{
+font-size:13px;
+opacity:0.7;
+margin-bottom:18px;
 }
 
-/* Shine Effect */
-.shine{
-position:relative;
-overflow:hidden;
+/* BUTTON */
+
+.btn{
+display:block;
+text-decoration:none;
+background:#22c55e;
+color:#000;
+font-weight:700;
+padding:16px;
+border-radius:10px;
+margin:12px 0;
+transition:0.3s;
 }
 
-.shine:before{
-content:'';
-position:absolute;
-top:0;
-left:-120%;
-width:60%;
-height:100%;
-background:rgba(255,255,255,0.2);
-transform:skewX(-20deg);
-animation:shineMove 3s infinite;
+.btn:hover{
+background:#16a34a;
+transform:scale(1.03);
 }
 
-@keyframes shineMove{
-100%{
-left:140%;
+/* TRUST BOX */
+
+.trust{
+background:rgba(0,255,150,0.08);
+padding:10px;
+border-radius:10px;
+font-size:13px;
+margin-bottom:15px;
+border:1px solid rgba(0,255,150,0.2);
 }
+
+/* LIST */
+
+.points{
+list-style:none;
+font-size:14px;
+text-align:left;
+margin:15px 0;
+}
+
+.points li{
+margin:8px 0;
+}
+
+/* URGENCY */
+
+.timer{
+margin-top:10px;
+font-size:13px;
+color:#facc15;
+}
+
+/* SOCIAL PROOF */
+
+.proof{
+margin-top:12px;
+font-size:12px;
+opacity:0.7;
+}
+
+/* FOOTER BRAND */
+
+.footer{
+margin-top:20px;
+font-size:12px;
+opacity:0.6;
+}
+
+.footer a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
+}
+
+.footer a:hover{
+text-decoration:underline;
+}
+
+/* RISK */
+
+.risk{
+margin-top:10px;
+font-size:11px;
+opacity:0.5;
 }
 
 </style>
+</head>
 
-<!-- BACKGROUND -->
-<div class="bgGlow1"></div>
-<div class="bgGlow2"></div>
+<body>
 
-<!-- CARD -->
-<div class="mainCard">
+<div class="container">
 
-<!-- TOP BADGE -->
-<div style="display:inline-block;
-padding:8px 18px;
-border-radius:40px;
-background:rgba(0,208,132,0.12);
-border:1px solid rgba(134,239,172,0.25);
-font-size:12px;
-font-weight:600;
-color:#bbf7d0;">
+<img src="https://i.ibb.co/j9XjdLVx/Radhika-Dp.jpg" class="logo">
 
-📈 Gujarat Premium Trading Community
+<h1>TELUGU TRADER RADHIKA</h1>
+<h2>NIFTY • BANKNIFTY • OPTIONS</h2>
 
-</div>
+<p class="sub">
+Daily Intraday Trading Signals & Analysis
+</p>
 
-<!-- PHOTO -->
-<div style="margin-top:24px;
-display:flex;
-justify-content:center;
-align-items:center;">
-
-<div style="padding:5px;
-border-radius:50%;
-background:linear-gradient(135deg,#00d084,#00b4ff);
-box-shadow:0 0 35px rgba(0,208,132,0.4);">
-
-<img src="https://i.ibb.co/5W8ftzgW/gujarati-photo.png"
-class="floatImg"
-style="width:150px;
-height:150px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #111827;
-display:block;">
-
-</div>
-
-</div>
-
-<!-- NAME -->
-<div style="font-size:35px;
-font-weight:800;
-margin-top:20px;
-line-height:1.4;
-letter-spacing:1px;">
-
-<span style="color:#86efac;">
-ગુજરાતી
-</span>
-
-Trader
-
-</div>
-
-<!-- TEXT -->
-<div style="font-size:15px;
-line-height:1.9;
-color:#d1d5db;
-margin-top:14px;">
-
-📊 Daily Stock Market Learning <br>
-
-🔥 NIFTY • BANKNIFTY • OPTION CALLS <br>
-
-💰 Smart Trading Strategies & Analysis
-
-</div>
-
-<!-- BUTTON -->
-<a href="https://t.me/+kofdMtSMhnM5NmJl"
-target="_blank"
-class="joinBtn shine"
-style="display:block;
-margin-top:30px;
-background:linear-gradient(90deg,#00d084,#00b4ff);
-padding:18px;
-border-radius:22px;
-text-decoration:none;
-font-size:20px;
-font-weight:700;
-color:#fff;
-box-shadow:0 0 28px rgba(0,208,132,0.35);">
-
-🚀 JOIN TELEGRAM NOW
-
+<!-- TOP BUTTON -->
+<a href="https://t.me/+8sh7G5GHXGllNjFl" class="btn">
+🚀 Join Free Telegram Channel
 </a>
 
-<!-- FEATURES -->
-<div style="margin-top:24px;
-background:rgba(255,255,255,0.04);
-padding:18px;
-border-radius:24px;
-text-align:left;
-font-size:15px;
-line-height:2;
-color:#f3f4f6;">
-
-✅ Daily Trading Signals <br>
-
-✅ Live Market Analysis <br>
-
-✅ Beginner Friendly Community <br>
-
-✅ Smart Learning & Growth
-
+<div class="trust">
+✔ Trusted by 5,000+ Traders <br>
+✔ Daily Consistent Setups
 </div>
 
-<!-- LIVE USERS -->
-<div id="liveUsers"
-style="margin-top:18px;
-font-size:14px;
-font-weight:600;
-color:#86efac;">
+<ul class="points">
+<li>✔ 5–7 High Probability Trades</li>
+<li>✔ Exact Entry, SL & Target</li>
+<li>✔ Beginner Friendly Guidance</li>
+<li>✔ Live Market Updates</li>
+</ul>
 
-● 6,482 Traders Joined Today
-
-</div>
-
-<!-- ADS BOX -->
-<div style="margin-top:22px;
-padding:15px;
-border-radius:20px;
-background:linear-gradient(90deg,#111827,#1f2937);
-font-size:14px;
-color:#d1d5db;">
-
-🔥 Ads by 
-
-<a href="https://t.me/+65RvsP9pHTtkNzU1"
-style="color:#38bdf8;
-font-weight:bold;
-text-decoration:none;">
-
-AmitGrowthAgency
-
+<!-- BOTTOM BUTTON -->
+<a href="https://t.me/+8sh7G5GHXGllNjFl" class="btn">
+🚀 Join Free Telegram Channel
 </a>
 
+<div class="timer">
+⏳ Free Access Closing Soon
 </div>
 
-<!-- FOOTER -->
-<div style="font-size:12px;
-color:#9ca3af;
-margin-top:24px;
-line-height:1.8;">
+<div class="proof">
+📈 Limited Seats • Active Community
+</div>
 
-⚠️ Stock market investments are subject to market risks.
+<p class="risk">
+⚠ Market investments are subject to risk
+</p>
 
+<!-- CLEAN FOOTER -->
+<div class="footer">
+Powered by 
+<a href="https://t.me/+8sh7G5GHXGllNjFl" target="_blank">
+Ankul Ad Agency
+</a>
 </div>
 
 </div>
 
-</div>
-
-<script>
-
-var live = 6482;
-
-setInterval(function(){
-
-live += Math.floor(Math.random()*5);
-
-document.getElementById("liveUsers").innerHTML =
-"● " + live + " Traders Joined Today";
-
-},3000);
-
-</script>
+</body>
+</html>
